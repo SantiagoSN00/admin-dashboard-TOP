@@ -1,0 +1,139 @@
+
+
+:root{
+    font-size: 62.5%;
+}
+html,body{
+    margin: 0px;
+}
+body,.home { min-height: 100vh; }
+
+img{
+    filter: invert(1);
+    width: 30px;
+    height: 30px;
+}
+.saludo img{
+    filter: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+.busqueda{
+    display: flex;
+    height: 25px;
+}
+.saludo p{
+    margin: 0;
+    font-size: 2rem;
+    margin-top: 10px;
+
+}
+
+.home{
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto 1fr;
+    gap:10px;
+}
+.fixed{
+    position: fixed;
+}
+.sidebar{
+    background-color: rgb(9, 66, 66);
+    display:grid;
+    justify-items: center;
+    grid-row: 1/3;
+    text-align: center;
+    color: white;
+}
+.logos{
+    display: grid;
+    padding: 10px 0px;
+    gap: 30px;
+    width: 100%;
+}
+.interactuar{
+    width: 100%;
+
+}
+.interactuar ul,.settings ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+li{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+li:first-child {
+    margin-top:0;
+}
+
+
+
+
+
+.header{
+    background-color: bisque;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 75% 1fr;
+    grid-template-rows: fit-content(10px) fit-content(10px);
+}
+.header input{
+    width: 75%;
+    border-radius: 25px;
+    background-color: white;
+    border: 0;
+    padding-left: 10px;
+    display: inline-block;
+}
+.saludo{
+    grid-row-end: 2;
+    grid-row-end: 3;
+}
+
+
+.dashboard{
+    height: 100%;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5px;
+    }
+.left-panel{
+    padding: 20px;
+}
+.right-panel{
+    padding: 5px    10px;
+}
+.projects{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+}
+.projects div{
+}
+.right-panel,.announcements,.trending,.left-panel{
+    background-color: rgb(228, 207, 181);
+
+}
+.announcements,.trending{
+    display:flex;
+    flex-direction: column;
+}
+.announcements p,.trending p{
+    margin-bottom: 0;
+}
+
+.right-panel{
+    display: grid;
+    grid-template-columns: 1fr ;
+}
